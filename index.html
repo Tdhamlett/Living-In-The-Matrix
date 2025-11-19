@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build your future</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+</html>
+<section class="banner">
+  <div class="banner__content">
+    <h1>Build Your Future</h1>
+    <p>Join thousands of learners growing their coding skills.</p>
+    <button>Get Started</button>
+  </div>
+<style>
+/* Banner layout */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6c63ff, #8ec5fc);
+  color: white;
+  text-align: center;
+  animation: fadeUp 1s ease-out;
+}
+
+/* Banner content */
+.banner__content {
+  max-width: 600px;
+  padding: 0 5vw;
+}
+
+/* Text styling */
+.banner h1 {
+  font-size: 6vw;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 2vw;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.banner button {
+  background-color: white;
+  color: #6c63ff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 8vw;
+  }
+
+  .banner p {
+    font-size: 4vw;
+  }
+
+  .banner button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    padding: 10vh 5vw;
+  }
+
+  .banner h1 {
+    font-size: 10vw;
+  }
+
+  .banner p {
+    font-size: 5vw;
+  }
+}
+</style>
